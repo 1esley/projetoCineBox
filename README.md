@@ -80,11 +80,13 @@ Sugestões e contribuições são bem-vindas! 😊
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 Projeto desenvolvido como atividade acadêmica por:
-**[Andressa Victórya]**  
-**[Kaique Santos]**  
-**[Wesley Oliveira]**
+
+**Andressa Victórya**  
+**Kaique Santos**  
+**Wesley Oliveira**
+
 Curso: Análise e Desenvolvimento de Sistemas  
 Instituto Federal de Educação, Ciência e Tecnologia da Paraíba (IFPB) - Campus Cajazeiras
