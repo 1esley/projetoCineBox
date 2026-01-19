@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(90deg,#ec7513,#cc1414,#340548,#1a1820);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#conteiner{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 30%;
+    background-color: rgba(233, 159, 159, 0.3);
+    border-radius: 20px;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+}
+
+.error{
+    display: block;   
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+label{
+    font-size: 16px;
+    margin: 2px;
+    width: 52%;
+}
+
+input{
+    height: auto;
+    padding: 10px;
+    width: 50%;
+    margin: 2px;
+    border: 2px solid rgb(235, 208, 208) ;
+    border-radius: 5px;
+}
+
+button{
+    justify-self: end;
+    padding: 10px;
+    height: 50px;
+    width: 50%;
+    border: 2px solid rgb(167, 166, 166);
+    border-radius: 7px;
+    background-color: rgb(37, 37, 68); ;
+    color: white;
+    margin-top: 20px;
+}
+
+h1{
+    margin-bottom: 5%;
+    color: rgb(37, 37, 68); 
+}
+
+#pais{
+    height: auto;
+    width: 56%;
+    margin: 2px;
+    border: 2px solid rgb(167, 166, 166) ;
+    border-radius: 5px;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#feedback {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 2px;
+}

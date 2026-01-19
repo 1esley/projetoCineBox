@@ -1,0 +1,109 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: rgb(88, 18, 18); */
+    background: linear-gradient(90deg,#ec7513,#cc1414,#340548,#1a1820);
+}
+
+.top-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: x-large;
+    color: #fff;
+}
+
+.gender-bar{
+    display: flex;
+    justify-self: center; 
+    justify-content: center;
+    margin-top: 20px;
+    /* background-color: rgb(0, 0, 0); */
+    background: linear-gradient(90deg,#ec7513,#cc1414,#340548,#1a1820);
+    padding: 10px;
+    width: 650px;
+    border-radius: 40px;
+    gap: 20px;
+
+    .gender-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 100px;
+        height: 40px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .gender-button:hover{
+        color: #da9494;
+    }
+}
+
+.series {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 30px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.card {
+    perspective: 1000px;
+    background: transparent;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-radius: 6px;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    border-radius: 6px;
+}
+
+.card-front {
+    background: #000;
+    color: #fff;
+}
+
+.card-back {
+    background: #000;
+    color: #fff;
+    transform: rotateY(180deg); /* vira a face traseira para não aparecer inicialmente */
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
