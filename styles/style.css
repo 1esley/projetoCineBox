@@ -1,7 +1,9 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* background-color: rgb(88, 18, 18); */
     background: linear-gradient(120deg,#ec7513,#cc1414,#340548,#1a1820);
+    background-repeat: no-repeat;
+    height: 96vh;
+    width: 90vw;
 }
 
 .top-div {
@@ -18,7 +20,6 @@ body {
     justify-self: center; 
     justify-content: center;
     margin-top: 20px;
-    /* background-color: rgb(0, 0, 0); */
     background: linear-gradient(120deg,#ec7513,#cc1414,#340548,#1a1820);
     padding: 10px;
     width: 650px;
@@ -44,7 +45,7 @@ body {
     }
 }
 
-.series {
+.filmes {
     display: grid;
     align-items: center;
     justify-items: center;
@@ -95,15 +96,16 @@ body {
 }
 
 .card-front {
-    background: #000;
-    background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
 }
 
 .card-back {
     background: #000;
     color: #fff;
-    transform: rotateY(180deg); /* vira a face traseira para não aparecer inicialmente */
+    transform: rotateY(180deg);
 }
 
 .card:hover .card-inner {
