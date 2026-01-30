@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLIME DETALHADO</title>
+    <title id="page-title"></title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <h2 id="title"></h2>
     <p id="description"></p>
 
-    <h3>Comentários</h3>
-    <div id="comments"></div>
-
+    <h3>Avalie</h3>
+    <div id="rates">
+        <span class="star" value="1">&#9733;</span>
+        <span class="star" value="2">&#9733;</span>
+        <span class="star" value="3">&#9733;</span>
+        <span class="star" value="4">&#9733;</span>
+        <span class="star" value="5">&#9733;</span>
+    </div>
     <textarea id="comment"></textarea>
     <button onclick="addComment()">Comentar</button>
+    
+    <h3>Avaliações</h2>
+    <div id="comments"></div>
 
     <script src="../scripts/data.js"></script>
     <script src="../scripts/filmeReview.js"></script>
