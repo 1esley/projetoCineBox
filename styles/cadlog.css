@@ -66,14 +66,6 @@ h1{
     color: rgb(37, 37, 68); 
 }
 
-#pais{
-    height: auto;
-    width: 56%;
-    margin: 2px;
-    border: 2px solid rgb(167, 166, 166) ;
-    border-radius: 5px;
-}
-
 button:active {
     transform: scale(0.9);
 }

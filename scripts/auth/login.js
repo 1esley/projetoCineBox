@@ -24,7 +24,7 @@ document.getElementById('login').addEventListener('click', function () {
     passError.textContent = 'Informe a senha';
     return;
   }
-
+//simples, pega os dados e procura no locastorage
   const users = JSON.parse(localStorage.getItem('users')) || [];
 
   const userFound = users.find(
@@ -36,7 +36,7 @@ document.getElementById('login').addEventListener('click', function () {
     return;
   }
 
-
+// gera o user logado
   localStorage.setItem('loggedUser', JSON.stringify({
     name: userFound.name,
     email: userFound.email

@@ -6,23 +6,34 @@
     <title id="page-title"></title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
-    <h2 id="title"></h2>
-    <p id="description"></p>
-
-    <h3>Avalie</h3>
-    <div id="rates">
-        <span class="star" value="1">&#9733;</span>
-        <span class="star" value="2">&#9733;</span>
-        <span class="star" value="3">&#9733;</span>
-        <span class="star" value="4">&#9733;</span>
-        <span class="star" value="5">&#9733;</span>
+<header class="top-bar">
+    <div class="user-area">
+        <img src="../images/logo.png" alt="logo">
+        <button class="voltar-btn" onclick="window.history.back()">Voltar</button>
     </div>
-    <textarea id="comment"></textarea>
-    <button onclick="addComment()">Comentar</button>
+</header>
+<body>
+    <div class="title-desc">
+        <h2 class="movie-title" id="title"></h2>
+        <p class="movie-description" id="description"></p>
+    </div>
+
+    <div class="av-input">
+        <h3>Avalie</h3>
+        <div id="rates">
+            <span class="star" value="1">&#9733;</span>
+            <span class="star" value="2">&#9733;</span>
+            <span class="star" value="3">&#9733;</span>
+            <span class="star" value="4">&#9733;</span>
+            <span class="star" value="5">&#9733;</span>
+        </div>
+        <textarea id="comment"></textarea>
+        <button class="comment-btn" onclick="addComment()">Comentar</button>
+    </div>
     
-    <h3>Avaliações</h2>
-    <div id="comments"></div>
+    <div class="av-out">
+        <div id="comments"></div>
+    </div>
 
     <script src="../scripts/data.js"></script>
     <script src="../scripts/filmeReview.js"></script>

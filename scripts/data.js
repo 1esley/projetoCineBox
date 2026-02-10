@@ -119,7 +119,6 @@ const movies = [
       poster: "../images/velocidademaxima.jpg",
     synopsis: "Jack Traven enfrenta um criminoso e tenta salvar todos em um ônibus em alta velocidade."
   },
-  // ...existing code...
   {
     id: 16,
     title: "Orgulho e Preconceito",
@@ -176,7 +175,6 @@ const movies = [
     poster: "../images/aculpaehdasestrelas.jpg",
     synopsis: "Hazel e Gus enfrentam desafios e vivem um amor intenso apesar das dificuldades."
   },
-  // ...existing code...
   {
     id: 23,
     title: "Matrix",
@@ -233,7 +231,6 @@ const movies = [
     poster: "../images/achegada.jpg",
     synopsis: "Louise Banks desvenda o idioma dos alienígenas e descobre segredos sobre o tempo e a humanidade."
   },
-  // ...existing code...
   {
     id: 30,
     title: "Se Beber, Não Case",
@@ -346,7 +343,6 @@ const movies = [
     poster: "../images/casa das almas perdidas.jpg",
     synopsis: "Uma família luta para sobreviver em uma casa cheia de espíritos e segredos."
   },
-  // ...existing code...
   {
     id: 44,
     title: "Procurando Nemo",

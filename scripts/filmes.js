@@ -6,7 +6,7 @@ function renderMovies(movieList) {
     container.innerHTML = '<p>Nenhum filme encontrado</p>';
     return;
   }
-
+// for pra buscar os dados em data.js
   movieList.forEach(movie => {
     const card = document.createElement('div');
     card.classList.add('card');
@@ -34,7 +34,7 @@ function renderMovies(movieList) {
     container.appendChild(card);
   });
 }
-
+//é... filtro
 function filterMovies(genre) {
   const filtered = movies.filter(movie => movie.genre === genre);
   renderMovies(filtered);

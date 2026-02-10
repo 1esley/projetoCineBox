@@ -1,10 +1,70 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(120deg,#ec7513,#cc1414,#340548,#1a1820);
     background-repeat: no-repeat;
-    height:100vh;
-    width: 90vw;
+    background-attachment: fixed;
 }
+
+.top-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+}
+
+.user-area{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-weight: bold;
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fff;
+    }
+
+    .voltar-btn{
+        padding: 8px 18px;
+        border-radius: 20px;
+        border: none;
+        background: #ff3b3b;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .voltar-btn:hover{
+        background: #ff000085;
+        transform: scale(1.05);
+    }
+}
+
+#logout-btn{
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #ff3b3b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#logout-btn:hover{
+    background: #ff0000;
+    transform: scale(1.05);
+}
+
 
 .top-div {
     display: flex;
@@ -90,7 +150,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
     backface-visibility: hidden;
     border-radius: 6px;
 }
@@ -108,19 +168,48 @@ body {
     transform: rotateY(180deg);
 }
 
+.back-btn {
+    align-self: center;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(120deg,#ff7b00,#ff2a00);
+    color: white;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #ff8a00;
+    cursor: pointer;
+}
+
 .card:hover .card-inner {
     transform: rotateY(180deg);
+}
+
+#rates{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 
 .star { 
     cursor: pointer;
     color: gray; 
-    font-size: 2rem; 
+    font-size: 2.4rem;
+    transition: transform 0.15s, color 0.15s;
+}
+
+.star:hover{
+    transform: scale(1.25);
 }
 
 .star.hovered,
 .star.selected { 
-    color: gold; 
+    color: gold;
+    text-shadow: 0 0 8px rgba(255,215,0,0.7); 
 }
 
 .individual-rate {
@@ -130,4 +219,109 @@ body {
 
 .individual-rate.filled {
   color: gold;
+}
+
+.title-desc{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.movie-title{
+    color:#d6d6d6;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.movie-description{
+    font-size: 18px;
+    color: #d6d6d6;
+    line-height: 1.5;
+}
+
+.av-input{
+    text-align: center;
+    font-size: larger;
+    color: #ff7b00;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#comment{
+    resize: none;
+    height: 120px;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    background: #111;
+    color: white;
+}
+
+#comment::placeholder{
+    color: #777;
+}
+
+.comment-btn{
+    align-self: center;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(120deg,#ff7b00,#ff2a00);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.comment-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,100,0,0.7);
+}
+
+.av-out{
+    color: #ff7b00;
+    margin-top: 40px;
+}
+
+#comments{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.comment-card{
+    background: rgba(0,0,0,0.6);
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.2s;
+}
+
+.comment-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.comment-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment-stars .individual-rate{
+    font-size: 25px;
+}
+
+.comment-text{
+    color: #ddd;
+    line-height: 1.4;
 }
