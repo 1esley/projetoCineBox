@@ -125,7 +125,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 300px;
+    aspect-ratio: 2 / 3;
     background: #000;
     color: #fff;
     font-weight: bold;
@@ -357,7 +357,7 @@ body {
     .card{
         width: 90%;
         max-width: 320px;
-        height: 260px;
+        aspect-ratio: 2 / 3;
     }
 
     .movie-title{
@@ -400,8 +400,8 @@ body {
 
     .card{
         width: 100%;
-        max-width: 300px;
-        height: 260px;
+        max-width: 280px;
+        aspect-ratio: 2 / 3;
     }
 
     .gender-bar{
