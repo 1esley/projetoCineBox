@@ -80,3 +80,36 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+@media (max-width: 768px){
+
+  .top-nav{
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .hero-content{
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-content h2{
+    font-size: 2rem;
+  }
+
+  .hero-content p{
+    font-size: 0.95rem;
+  }
+
+  .cta{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn, .btn-outline{
+    width: 80%;
+    text-align: center;
+  }
+}
