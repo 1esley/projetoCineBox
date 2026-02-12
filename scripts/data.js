@@ -188,7 +188,7 @@ const movies = [
     title: "Blade Runner",
     genre: "Ficção Científica",
     description: "Um caçador de androides em um futuro distópico.",
-    poster: "../images/bladeRunner.jpg",
+    poster: "../images/bladerunner.jpg",
     synopsis: "Um caçador de androides em um futuro distópico onde ele precisa enfrentar os limites da humanidade e da tecnologia."
   },
   {
