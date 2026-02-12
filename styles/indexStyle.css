@@ -13,7 +13,7 @@ body {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 63px);
   display: flex;
   flex-direction: column;
 }
@@ -80,6 +80,17 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+footer{
+    padding: 12px 10px;
+    line-height: 1.4;
+    text-align: center;
+    color: #dddddd93;
+    font-size: 14px;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+}
+
 
 @media (max-width: 768px){
 
