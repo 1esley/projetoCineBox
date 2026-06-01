@@ -132,7 +132,7 @@ const movies = [
     title: "Diário de uma Paixão",
     genre: "Romance",
     description: "Um casal luta para ficar junto apesar das adversidades.",
-    poster: "../images/diariodeumaPaixao.jpg",
+    poster: "../images/diariodeumapaixao.jpg",
     synopsis: "Noah e Allie vivem um romance intenso e inesquecível, marcado por obstáculos e memórias."
   },
   {
